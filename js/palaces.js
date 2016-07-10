@@ -48,7 +48,8 @@ $(document).ready(function () {
         counter++;
 
         if (counter >= maxQuestions) {
-            document.write("Done! Great Job! You got ", numRight, " out of ", maxQuestions);
+            document.write("<div style='max-width: 35em; margin-left: auto; margin-right: auto;text-align: center; font-size:25px; margin-top: 5%; background-color: #E2A838; padding: 20px; '><h1 style='text-align: center;'>Done! Great Job! <br>You got </h1>", numRight, "  out of  ", maxQuestions, "<br>",
+                "<a href='#'><button type='Start Over' style='background-color: #5F00E7; color: white; padding: .75em 1em; text-align: center;font-size: 15px; margin: 50px 20px; cursor: pointer; border-radius: 12px; -webkit-transition-duration: 0.4s;  transition-duration: 0.4s;'>Start Over</button></a></div" );
             return;
         }
 

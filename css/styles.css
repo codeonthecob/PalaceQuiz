@@ -34,12 +34,16 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
-section.start_q,
-section.main_page {
+.start_q,
+.main_page {
 	max-width:  35em;
 	margin-left: auto;
 	margin-right: auto;
 	height: 500px;
+}
+
+.main_page {
+	display: none;
 }
 
 section.start_q {
@@ -133,6 +137,10 @@ input[type="radio"] {
 .ans3_img {
     background: url("http://i.imgur.com/ARbBPm7.png") top center no-repeat;
      background-size: cover;
+}
+
+script {
+	display: none;
 }
 
 

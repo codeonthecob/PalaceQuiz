@@ -31,7 +31,6 @@ $(document).ready(function () {
     $('#ans1').text(questions[counter].choices[1]);
     $('#ans2').text(questions[counter].choices[2]);
     $('#ans3').text(questions[counter].choices[3]);
-    //$('#ans4').text(questions[counter].choices[4]);
      
     $('button').on('click', function () {
         var answer = ($('input[name="answers"]:checked').val());
@@ -53,7 +52,6 @@ $(document).ready(function () {
         $('#ans1').text(questions[counter].choices[1]);
         $('#ans2').text(questions[counter].choices[2]);
         $('#ans3').text(questions[counter].choices[3]);
-        //$('#ans4').text(questions[counter].choices[4]);
 
     });
 });

@@ -1,29 +1,103 @@
-#question {
-    font-weight:bold;
-    color: black;
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;*/
+	display: block;
+	position: relative;
 }
 
-#ans0 {
-    color:black
+.light_brown {
+	color: #9D8C69;
 }
 
-#ans1 {
-    color:black
+.soft_yellow {
+	color: #F6E1A7;
 }
 
-#ans2 {
-    color:black
+.gold {
+	color: #E2A838; /*richer gold*/
+	color: #E4B965;
 }
 
-#ans3 {
-    color:black
+.royal_purlple {
+	color: #7F6EF9;
 }
 
-#ans4 {
-    color:black
+
+body{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8383c4+1,e4e3ea+73,e4e3ea+73 */
+	background: #8383c4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #8383c4 1%, #e4e3ea 73%, #e4e3ea 73%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #8383c4 1%,#e4e3ea 73%,#e4e3ea 73%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #8383c4 1%,#e4e3ea 73%,#e4e3ea 73%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8383c4', endColorstr='#e4e3ea',GradientType=0 ); /* IE6-9 */
+	font-family: 'Roboto', sans-serif;
+}
+
+section.start_q,
+section.main_page {
+	max-width:  35em;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+}
+
+section.start_q {
+	background: url(http://i.imgur.com/ssQ6tse.png)center 24% no-repeat;	
+	text-align: center;
+	padding-top: 10%;
+}
+
+section.start_q h1{
+	padding-top: 4em;
 }
 
 h1 {
-    font-family:"arial", cursive, sans-serif;
-color:black;
+    font-family: 'Galada', cursive;
+    color: #F5D167; /*gold*/
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px hsl(265, 8%, 26%);
 }
+
+input[type="radio"] {
+    float: left;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.start_button {
+    background-color: #5F00E7; /* purple*/
+    color: white;
+    padding: .75em 1em;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 0px;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.start_button:hover {
+    background-color: #FECD7A;
+    color: white;
+}
+
+#question {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.choices {
+	padding: 0px 0px 2px 0px;
+}
+
+#ans0, #ans1, #ans2, #ans3, #ans4 {
+    color: black;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+

@@ -1,20 +1,25 @@
 var questions = [{
+    image: "ans0_img",
     question: "Which King ruled from this palace the longest?",
     choices: ["Charles II", "Louis XIV", "Henry IV", "William III"],
     correctAnswer: 1
 }, {
+    image: "ans1_img",
     question: "What is the name of this palace?",
     choices: ["St. James", "Windsor", "Buckingham", "Kensington"],
     correctAnswer: 2
 }, {
+    image: "ans2_img",
     question: "Who is the current Monarch of this palace?",
     choices: ["Harald V", "Felipe VI", "Margrethe II", "Carl XVI"],
     correctAnswer: 1
 }, {
+    image: "ans3_img",
     question: "What is the name of this palace?",
     choices: ["Schonobrunn", "Amalienborg", "Stockholm", "Winter"],
     correctAnswer: 3
 }, {
+    image: "ans4_img",
     question: "Where is this palace located?",
     choices: ["Vienna, Austria", "Berlin, Germany", "Paris, France", "Rome, Italy"],
     correctAnswer: 0
@@ -27,6 +32,7 @@ $(document).ready(function () {
 
     // display first question
     $('#question').text(questions[counter].question);
+    $("#ans0_img_1").addClass(questions[counter].image);
     $('#ans0').text(questions[counter].choices[0]);
     $('#ans1').text(questions[counter].choices[1]);
     $('#ans2').text(questions[counter].choices[2]);
@@ -48,6 +54,7 @@ $(document).ready(function () {
 
         // Show next question
         $('#question').text(questions[counter].question);
+        $("#ans0_img_1").addClass(questions[counter].image);
         $('#ans0').text(questions[counter].choices[0]);
         $('#ans1').text(questions[counter].choices[1]);
         $('#ans2').text(questions[counter].choices[2]);

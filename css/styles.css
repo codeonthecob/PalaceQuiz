@@ -111,7 +111,7 @@ input[type="radio"] {
     width: 100%;
 }
 
-.ans0_img, .ans1_img, .ans2_img, .ans3_img {
+.ans0_img, .ans1_img, .ans2_img, .ans3_img, .ans4_img {
     position: relative;
     background-size: cover;
     width: 100%;
@@ -120,21 +120,26 @@ input[type="radio"] {
 }
 
 .ans0_img {
-	background: url("http://i.imgur.com/6SZ9qmd.png") top center no-repeat;
+	background: url("http://i.imgur.com/vOFCMSf.png") top center no-repeat;
 	 background-size: cover;
 }
 
 .ans1_img {
-    background: url("http://i.imgur.com/ARbBPm7.png") top center no-repeat;
-    background-size: cover;
-}
-
-.ans2_img {
     background: url("http://i.imgur.com/6SZ9qmd.png") top center no-repeat;
     background-size: cover;
 }
 
+.ans2_img {
+    background: url("http://i.imgur.com/RPycwQZ.png") top center no-repeat;
+    background-size: cover;
+}
+
 .ans3_img {
+    background: url("http://i.imgur.com/aau6Arl.png") top center no-repeat;
+     background-size: cover;
+}
+
+.ans4_img {
     background: url("http://i.imgur.com/ARbBPm7.png") top center no-repeat;
      background-size: cover;
 }

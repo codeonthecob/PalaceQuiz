@@ -40,7 +40,7 @@ $(document).ready(function () {
     $('#ans4').text(questions[counter].choices[4]);
 
      
-    $('button').on('click', function () {
+    $('#button').on('click', function () {
         var answer = ($('input[name="answers"]:checked').val());
 
         // increment score if right

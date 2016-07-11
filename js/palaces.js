@@ -1,26 +1,26 @@
 var questions = [{
-    image: "ans0_img",
     question: "Which King ruled from this palace the longest?",
+     image: "ans0_img",
     choices: ["Charles II", "Louis XIV", "Henry IV", "William III"],
     correctAnswer: 1
 }, {
-    image: "ans1_img",
     question: "What is the name of this palace?",
+    image: "ans1_img",
     choices: ["St. James", "Windsor", "Buckingham", "Kensington"],
     correctAnswer: 2
 }, {
-    image: "ans2_img",
     question: "Who is the current Monarch of this palace?",
+    image: "ans2_img",
     choices: ["Harald V", "Felipe VI", "Margrethe II", "Carl XVI"],
     correctAnswer: 1
 }, {
-    image: "ans3_img",
     question: "What is the name of this palace?",
+    image: "ans3_img",
     choices: ["Schonobrunn", "Amalienborg", "Stockholm", "Winter"],
     correctAnswer: 3
 }, {
-    image: "ans4_img",
     question: "Where is this palace located?",
+    image: "ans4_img",
     choices: ["Vienna, Austria", "Berlin, Germany", "Paris, France", "Rome, Italy"],
     correctAnswer: 0
 }];
@@ -37,6 +37,8 @@ $(document).ready(function () {
     $('#ans1').text(questions[counter].choices[1]);
     $('#ans2').text(questions[counter].choices[2]);
     $('#ans3').text(questions[counter].choices[3]);
+    $('#ans4').text(questions[counter].choices[4]);
+
      
     $('button').on('click', function () {
         var answer = ($('input[name="answers"]:checked').val());
@@ -60,5 +62,6 @@ $(document).ready(function () {
         $('#ans1').text(questions[counter].choices[1]);
         $('#ans2').text(questions[counter].choices[2]);
         $('#ans3').text(questions[counter].choices[3]);
+        $('#ans4').text(questions[counter].choices[4]);
     });
 });
